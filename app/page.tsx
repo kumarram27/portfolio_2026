@@ -1,22 +1,19 @@
-import Card from "@/components/Card";
 import Hero from "@/components/Hero";
 import RecentProjects from "@/components/RecentProjects";
-import { TracingBeam } from "@/components/ui/tracing-beam";
-import Image from "next/image";
 import Footer from "@/components/Footer";
 import Skills from "@/components/Skills";
+import Experience from "@/components/Experience";
 
 export default function Home() {
   return (
-    <main className="relative bg-black-100 flex justify-center items-center select-none flex-col overflow-hidden mx-auto sm:px-10 px-5 ">
-      <TracingBeam className="px-3">
-        <div className="max-w-8xl w-full">
-          <Hero />
-          <Skills/>
-          <RecentProjects />
-          <Footer />
-        </div>
-      </TracingBeam>
+    <main className="w-full min-w-0 overflow-x-clip bg-black-100 flex justify-center items-center select-none flex-col mx-auto sm:px-10 px-5">
+      <div className="max-w-8xl w-full relative">
+        <Hero />
+        <Skills />
+        <Experience />
+        <RecentProjects limit={2} />
+        <Footer />
+      </div>
     </main>
   );
 }

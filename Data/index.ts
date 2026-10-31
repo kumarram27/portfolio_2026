@@ -1,83 +1,10 @@
-import { url } from "inspector";
-
 export const navItems = [
-  { name:"Home", link: "#home" },
+  { name: "Home", link: "#home" },
   { name: "About", link: "#about" },
+  { name: "Experience", link: "#experience" },
   { name: "Projects", link: "#projects" },
   { name: "Contact", link: "#contact" },
 ];
-
-//  export const heroData = [
-//     {
-//       id: 1,
-//       title: "Hi, I'm Kumar",
-//       description: "I'm a Frontend Developer with a passion for creating beautiful and interactive user experiences.",
-//       img: "",
-//     },
-//  ];
-// export const gridItems = [
-//   {
-//     id: 1,
-//     title: "I prioritize client collaboration, fostering open communication ",
-//     description: "",
-//     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
-//     imgClassName: "w-full h-full",
-//     titleClassName: "justify-end",
-//     img: "/b1.svg",
-//     spareImg: "",
-//   },
-//   {
-//     id: 2,
-//     title: "I'm very flexible with time zone communications",
-//     description: "",
-//     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
-//     imgClassName: "",
-//     titleClassName: "justify-start",
-//     img: "",
-//     spareImg: "",
-//   },
-//   {
-//     id: 3,
-//     title: "My tech stack",
-//     description: "I constantly try to improve",
-//     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
-//     imgClassName: "",
-//     titleClassName: "justify-center",
-//     img: "",
-//     spareImg: "",
-//   },
-//   {
-//     id: 4,
-//     title: "Tech enthusiast with a passion for development.",
-//     description: "",
-//     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
-//     imgClassName: "",
-//     titleClassName: "justify-start",
-//     img: "/grid.svg",
-//     spareImg: "/b4.svg",
-//   },
-
-//   {
-//     id: 5,
-//     title: "Currently building a JS Animation library",
-//     description: "The Inside Scoop",
-//     className: "md:col-span-3 md:row-span-2",
-//     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
-//     titleClassName: "justify-center md:justify-start lg:justify-center",
-//     img: "/b5.svg",
-//     spareImg: "/grid.svg",
-//   },
-//   {
-//     id: 6,
-//     title: "Do you want to start a project together?",
-//     description: "",
-//     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
-//     imgClassName: "",
-//     titleClassName: "justify-center md:max-w-full max-w-60 text-center",
-//     img: "",
-//     spareImg: "",
-//   },
-// ];
 
 export const projects = [
   {
@@ -117,111 +44,32 @@ export const projects = [
     liveLink:
       "https://microsoftedge.microsoft.com/addons/detail/mygvp-extension/banjhoagimjlnagailpnofkgdadghhed",
   },
+];
+
+export const experiences = [
   {
-    id: 1,
-    title: "Portfolio Website",
-    des: "A personal portfolio website built with Next.js, Tailwind CSS, and Framer Motion.",
-    img: "/p1.png",
-    iconLists: ["/next2.svg", "/tail.svg", "/ts.svg", "/fm.svg"],
-    githubLink: "https://github.com/kumarram27",
-    liveLink: "https://kumardev.me",
+    company: "FlintLab Inc.",
+    role: "Software Development Engineer & Founding Engineer",
+    period: "Mar 2025 - Present",
+    highlights: [
+      "Built backend services for a device testing platform supporting 100+ Android and 50+ iOS devices.",
+      "Developed Python/FastAPI services with Redis Pub/Sub for 20+ parallel test executions.",
+      "Extended Android and iOS streaming, recording, device interaction, and session lifecycle workflows.",
+      "Built an ADB Logcat pipeline with Fluent Bit and Elasticsearch, reducing representative log volume from 98K to 20K lines.",
+      "Implemented Auth0 authentication, RBAC, API gateway validation, and production HTTPS routing.",
+    ],
+  },
+  {
+    company: "FlintLab Inc.",
+    role: "Software Development Engineer Intern",
+    period: "Jan 2025 - Mar 2025",
+    highlights: [
+      "Reduced redundant frontend API calls by 30% through state management and Redis caching.",
+      "Contributed to a SPA migration that reduced observed routing time from 300 ms to 20 ms.",
+      "Migrated Next.js API calls to server-side execution and contributed to Appium automation workflows for Android and iOS.",
+    ],
   },
 ];
-// export const products = [
-//   {
-//     title: "Moonbeam",
-//     link: "https://gomoonbeam.com",
-//     thumbnail:
-//       "https://aceternity.com/images/products/thumbnails/new/moonbeam.png",
-//   },
-//   {
-//     title: "Cursor",
-//     link: "https://cursor.so",
-//     thumbnail:
-//       "https://aceternity.com/images/products/thumbnails/new/cursor.png",
-//   },
-//   {
-//     title: "Rogue",
-//     link: "https://userogue.com",
-//     thumbnail:
-//       "https://aceternity.com/images/products/thumbnails/new/rogue.png",
-//   },
-
-//   {
-//     title: "Editorially",
-//     link: "https://editorially.org",
-//     thumbnail:
-//       "https://aceternity.com/images/products/thumbnails/new/editorially.png",
-//   },
-//   {
-//     title: "Editrix AI",
-//     link: "https://editrix.ai",
-//     thumbnail:
-//       "https://aceternity.com/images/products/thumbnails/new/editrix.png",
-//   },
-//   {
-//     title: "Pixel Perfect",
-//     link: "https://app.pixelperfect.quest",
-//     thumbnail:
-//       "https://aceternity.com/images/products/thumbnails/new/pixelperfect.png",
-//   },
-
-//   {
-//     title: "Algochurn",
-//     link: "https://algochurn.com",
-//     thumbnail:
-//       "https://aceternity.com/images/products/thumbnails/new/algochurn.png",
-//   },
-//   {
-//     title: "Aceternity UI",
-//     link: "https://ui.aceternity.com",
-//     thumbnail:
-//       "https://aceternity.com/images/products/thumbnails/new/aceternityui.png",
-//   },
-//   {
-//     title: "Tailwind Master Kit",
-//     link: "https://tailwindmasterkit.com",
-//     thumbnail:
-//       "https://aceternity.com/images/products/thumbnails/new/tailwindmasterkit.png",
-//   },
-//   {
-//     title: "SmartBridge",
-//     link: "https://smartbridgetech.com",
-//     thumbnail:
-//       "https://aceternity.com/images/products/thumbnails/new/smartbridge.png",
-//   },
-//   {
-//     title: "Renderwork Studio",
-//     link: "https://renderwork.studio",
-//     thumbnail:
-//       "https://aceternity.com/images/products/thumbnails/new/renderwork.png",
-//   },
-
-//   {
-//     title: "Creme Digital",
-//     link: "https://cremedigital.com",
-//     thumbnail:
-//       "https://aceternity.com/images/products/thumbnails/new/cremedigital.png",
-//   },
-//   {
-//     title: "Golden Bells Academy",
-//     link: "https://goldenbellsacademy.com",
-//     thumbnail:
-//       "https://aceternity.com/images/products/thumbnails/new/goldenbellsacademy.png",
-//   },
-//   {
-//     title: "Invoker Labs",
-//     link: "https://invoker.lol",
-//     thumbnail:
-//       "https://aceternity.com/images/products/thumbnails/new/invoker.png",
-//   },
-//   {
-//     title: "E Free Invoice",
-//     link: "https://efreeinvoice.com",
-//     thumbnail:
-//       "https://aceternity.com/images/products/thumbnails/new/efreeinvoice.png",
-//   },
-// ];
 
 // export const testimonials = [
 //   {
@@ -328,7 +176,8 @@ export const socialMedia = [
   },
   {
     id: 2,
-    img: "/twit.svg",
+    img: "/email.svg",
+    url: "mailto:kumar27.dev@gmail.com",
   },
   {
     id: 3,
@@ -566,8 +415,6 @@ export const Full_stack = [
     width: 70,
     height: 70,
   },
-
-  
 ];
 
 export const Other_skill = [
@@ -584,5 +431,3 @@ export const Other_skill = [
   //   height: 60,
   // },
 ];
-  
-  
